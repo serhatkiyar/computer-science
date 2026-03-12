@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{ /* `*` Tüm elementleri seçer. */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* border-box: width içine padding ve border dahildir.
+            - width = content + padding + border
+            - width: 200px
+            - padding: 20px
+            - border: 5px
+            => content width = 150px
+            */
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        .container{
+            max-width: 1200px;
+            background-color: aliceblue;
+            margin: 0 auto;
+            /* margin: 0 auto 0 auto; */
+        }
+
+        .row{
+            display: flex;
+            flex-direction: row; /* `display: flex;` varsayılan olarak flex-direction değerini row yapar. */
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap; /* Elemanlar sığmazsa alt satıra geçirir. */
+        }
+
+/* .col sınıfları ortak özelliklere sahip olduğu için tek seferde tanımlıyoruz.*/
+        .col-1, .col-2, .col-3, .col-6, .col-12 { 
+            display: flex;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 32px;
+        }
+
+        .col-1{
+            flex: 1;
+            background-color: blue;
+        }
+
+        .col-2{
+            flex: 2;
+            background-color: lightgreen;
+        }
+
+        .col-3{
+            flex: 3;
+            background-color: blueviolet;
+        }
+
+        .col-6{
+            flex: 6;
+            background-color: orange;
+        }
+
+        .col-12{
+            flex: 12;
+            background-color: pink;
+        }
+
+        @media (max-width: 768px) { /*genişlik 768px altına düştüğünde gerçekleşecek CSS değişimleri.*/
+            .container{
+                background-color: black;
+            }
+
+            .row {
+                flex-direction: column; /*flex-wrap: wrap zaten bunu sağlıyor tekrar yazmaya gerek yoktu.*/
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">2</div>
+            <div class="col-2">2</div>
+            <div class="col-2">2</div>
+            <div class="col-2">2</div>
+            <div class="col-2">2</div>
+            <div class="col-2">2</div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">3</div>
+            <div class="col-3">3</div>
+            <div class="col-3">3</div>
+            <div class="col-3">3</div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">3</div>
+            <div class="col-3">3</div>
+            <div class="col-2">2</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">12</div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">6</div>
+            <div class="col-6">6</div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
