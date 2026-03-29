@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand"><h3 class="text-white"><b>TeknoShop</b></h2></a>
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Ürün Ara..." aria-label="Ara"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <br>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="https://picsum.photos/800/300" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="https://picsum.photos/800/300" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="https://picsum.photos/800/300" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <br>
+
+        <h1>Popüler Ürünler</h1>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                <img src="./resources/airpods.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kablosuz Kulaklık</h5>
+                        <p class="card-text text-primary"><b>1.299 TL</b></p>
+                        <a href="#" class="btn btn-primary w-100">Sepete Ekle</a>
+                    </div>
+                </div>     
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                <img src="./resources/watch.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Saat</h5>
+                        <p class="card-text text-primary"><b>1.299 TL</b></p>
+                        <a href="#" class="btn btn-primary w-100">Sepete Ekle</a>
+                    </div>
+                </div>     
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                <img src="./resources/mouse.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fare</h5>
+                        <p class="card-text text-primary"><b>1.299 TL</b></p>
+                        <a href="#" class="btn btn-primary w-100">Sepete Ekle</a>
+                    </div>
+                </div>     
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                <img src="./resources/keyboard.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Klavye</h5>
+                        <p class="card-text text-primary"><b>1.299 TL</b></p>
+                        <a href="#" class="btn btn-primary w-100">Sepete Ekle</a>
+                    </div>
+                </div>     
+            </div>
+
+        </div>
+    </div>                          
+    
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
